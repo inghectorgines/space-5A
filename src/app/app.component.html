@@ -1,10 +1,11 @@
 <div class="wrapper">
-  <div class="galery">
+  <div class="gallery">
     <div class="item" *ngFor="let item of data">
-      <h1> {{ item.name }} </h1>
-      <p> {{ item.description }} </p>
+      <h1> {{ item.name }}. </h1>
+      <p> {{ item.description }}. </p>
+
       <div class="imgs">
-        <img [src]="img" alt="" *ngFor="let img of item.flickr_images">
+        <img [src]="img" *ngFor="let img of item.flickr_images">
       </div>
     </div>
   </div>
